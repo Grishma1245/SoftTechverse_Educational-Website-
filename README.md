@@ -76,7 +76,7 @@ SoftTechverse/
 
 ### 1. Clone the repository
 
-git clone <your-repository-url>
+git clone https://github.com/Grishma1245/SoftTechverse_Educational-Website-
 
 ### 2. Configure Virtual Environment
 
