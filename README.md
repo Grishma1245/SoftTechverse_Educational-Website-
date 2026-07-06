@@ -1,22 +1,8 @@
 # 🎭 SoftTechverse Education Portal — BDD Test Automation Framework
+ https://education.softtechverse.com
 
-[![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
-[![Selenium](https://img.shields.io/badge/selenium-4.21.0-green.svg)](https://www.selenium.dev/)
-[![BDD](https://img.shields.io/badge/behave-1.2.6-orange.svg)](https://behave.readthedocs.io/)
+A professional, enterprise-grade test automation suite built for the **SoftTechverse Education Portal** . This project implements the **Page Object Model (POM)** design pattern combined with **Behavior-Driven Development (BDD)** using Python's **Behave** framework and **Selenium WebDriver**.
 
-A professional, enterprise-grade test automation suite built for the **SoftTechverse Education Portal** (`https://education.softtechverse.com`). This project implements the **Page Object Model (POM)** design pattern combined with **Behavior-Driven Development (BDD)** using Python's **Behave** framework and **Selenium WebDriver**.
-
----
-
-## 🌟 Framework Key Features
-
-- **Behavior-Driven Development (BDD)**: Written in Gherkin syntax, enabling collaboration between QA, developers, and non-technical stakeholders.
-- **Page Object Model (POM)**: Separates page interactions from step definitions to maximize reuse.
-- **Driver Auto-Resolution**: Integrates `webdriver-manager` with custom 64-bit architecture resolution to prevent binary mismatch crashes.
-- **Fail-Safe Screenshots**: Automatic screenshot capture on scenario failures, stored in `reports/screenshots/`.
-- **Robust Synchronization**: Handled dynamic page loading with Selenium's explicit waits, bypassing redirect loops caused by expired portal subscriptions.
-
----
 
 ## 📊 Automated Test Execution Reports
 
@@ -85,55 +71,30 @@ SoftTechverse/
 
 ---
 
-## 🚀 Setup & Execution Guide
 
-Follow these steps to set up the environment and run the test suite locally.
+## Setup & Execution Guide
 
 ### 1. Clone the repository
-```bash
+
 git clone <your-repository-url>
-cd SoftTechverse
-```
 
 ### 2. Configure Virtual Environment
-Create and activate a Python virtual environment to manage dependencies:
-```bash
+
 # Create environment
 python -m venv myenv
 
-# Activate on Windows (PowerShell)
+# Activate virtual environment
 myenv\Scripts\activate
 
-# Activate on macOS/Linux
-source myenv/bin/activate
-```
 
 ### 3. Install Requirements
 Install all dependencies listed in `requirements.txt`:
-```bash
 pip install -r requirements.txt
-```
+
 
 ### 4. Execute Automated Suite
-Run the test command in your terminal:
-```bash
 # Run all scenarios
 behave
 
-# Run only smoke scenarios
-behave --tags=@smoke
 
-# Run with stdout output enabled
-behave --no-capture --no-capture-stderr
-```
 
----
-
-## ⚙️ Configuration File (`utils/config.py`)
-
-You can easily toggle parameters like target browser and timeouts in `utils/config.py`:
-```python
-BASE_URL = "https://education.softtechverse.com"
-TIMEOUT = 15          # Explicit wait time limits (seconds)
-BROWSER = "chrome"    # Multi-browser selection: 'chrome' | 'firefox' | 'edge'
-```
