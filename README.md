@@ -96,5 +96,7 @@ pip install -r requirements.txt
 # Run all scenarios
 behave
 
+**Author**
+Grishma Acharya
 
 
