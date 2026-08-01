@@ -57,7 +57,6 @@ SoftTechverse/
 └── .gitignore                          # Exclusions for python caches, virtual envs, and report outputs
 ```
 
----
 
 ## 📋 Scenarios Covered
 
@@ -94,7 +93,7 @@ pip install -r requirements.txt
 
 ### 4. Execute Automated Suite
 # Run all scenarios
-behave
+
 
 **Author**
 Grishma Acharya
